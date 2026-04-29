@@ -1,0 +1,47 @@
+/*fazendo estilização do conteudo*/
+
+.conteudo__fut{
+    background-color: aqua;
+    padding: 1rem;
+}
+.conteudo__bas{
+    background-color: blueviolet;
+    padding: 1rem;
+}
+.conteudo__vol{
+    background-color: brown;
+    padding: 1rem;
+}
+
+/* fazendo estilização utilizando o grid */
+.conteudo__sec{
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+
+    /* estilização das colunas */
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3,33.33%);
+    
+    /*estilização de linhas*/
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: 1fr;
+
+    /* column-gap: 5rem; */
+    /* row-gap: 5rem; */
+    gap: 5rem;
+}
+
+@media (min-width: 320px) and (max-width: 425px){
+    .conteudo__sec{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .conteudo__fut, .conteudo__bas, .conteudo__vol{
+        
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+}
