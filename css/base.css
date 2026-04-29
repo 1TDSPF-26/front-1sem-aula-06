@@ -16,7 +16,7 @@
     --cor-secundaria: #ff0000;
     --cor-fundo: #55555c;
     --bg-gradiente: linear-gradient(45deg, #303630, #2d3568, #27273a);
-    --titulo-main: 4rem;
+    --titulo-main: 1rem;
     --text-main: #fff;
 }   
 
@@ -48,4 +48,11 @@ ul{
 
 main{
     width: 100%;
+}
+footer{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color:var(--cor-fundo);
+    color:var(--text-main);
+
 }
