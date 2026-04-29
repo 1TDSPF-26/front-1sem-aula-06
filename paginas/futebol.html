@@ -3,58 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESPORTE - Futebol</title>
+    <title>ESPORTE TOTAL - Futebol</title>
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
 
   <body>
-    <header>
-      <h1>ESPORTE - Futebol</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Futebol</a></li>
-          <li><a href="./basquete.html">Basquete</a></li>
+    <header class="cabecalho">
+      <nav class="cabecalho__nav">
+        <ul class="cabecalho__ul">
+          <li class="cabecalho__li">
+            <a class="cabecalho__a" href="../index.html">Home</a>
+          </li>
+          <li class="cabecalho__li">
+            <a class="cabecalho__a cabecalho__a--ativo" href="#">Futebol</a>
+          </li>
+          <li class="cabecalho__li">
+            <a class="cabecalho__a" href="./basquete.html">Basquete</a>
+          </li>
+          <li class="cabecalho__li">
+            <a class="cabecalho__a" href="./volei.html">Volei</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Futebol - História</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          voluptatibus odit velit autem beatae repellat. Distinctio odit atque
-          laboriosam doloremque, hic amet cum adipisci! Amet illum, quos nulla
-          nobis beatae iusto porro aliquid repudiandae molestias, pariatur
-          laborum consectetur nemo ullam aperiam dolor ipsam esse. Corporis
-          aspernatur fuga doloribus quos magnam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          voluptatibus odit velit autem beatae repellat. Distinctio odit atque
-          laboriosam doloremque, hic amet cum adipisci! Amet illum, quos nulla
-          nobis beatae iusto porro aliquid repudiandae molestias, pariatur
-          laborum consectetur nemo ullam aperiam dolor ipsam esse. Corporis
-          aspernatur fuga doloribus quos magnam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          voluptatibus odit velit autem beatae repellat. Distinctio odit atque
-          laboriosam doloremque, hic amet cum adipisci! Amet illum, quos nulla
-          nobis beatae iusto porro aliquid repudiandae molestias, pariatur
-          laborum consectetur nemo ullam aperiam dolor ipsam esse. Corporis
-          aspernatur fuga doloribus quos magnam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          voluptatibus odit velit autem beatae repellat. Distinctio odit atque
-          laboriosam doloremque, hic amet cum adipisci! Amet illum, quos nulla
-          nobis beatae iusto porro aliquid repudiandae molestias, pariatur
-          laborum consectetur nemo ullam aperiam dolor ipsam esse. Corporis
-          aspernatur fuga doloribus quos magnam.
-        </p>
+    <main class="conteudo">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">FUTEBOL</h1>
+          <p class="hero__text">
+            O futebol é o esporte mais popular do mundo, praticado em todos os
+            cantos do planeta. Com origem na Inglaterra no século XIX, rapidamente
+            conquistou corações e mentes ao redor do globo. No Brasil, tornou-se
+            muito mais do que um esporte — é uma verdadeira paixão nacional, parte
+            da identidade cultural do povo brasileiro.
+          </p>
+          <p class="hero__text">
+            A Copa do Mundo FIFA é o maior evento esportivo do planeta, reunindo
+            bilhões de espectadores a cada quatro anos. O Brasil é o país com mais
+            títulos mundiais, tendo conquistado o pentacampeonato em 2002 no Japão
+            e Coreia do Sul. Nomes como Pelé, Ronaldo, Ronaldinho e Zico são
+            lendas eternas do esporte.
+          </p>
+          <p class="hero__text">
+            No cenário nacional, o Campeonato Brasileiro e a Copa do Brasil movimentam
+            torcidas apaixonadas de norte a sul do país. Clubes como Flamengo, Corinthians,
+            São Paulo, Palmeiras e Santos carregam histórias riquíssimas e torcidas
+            gigantescas, tornando o futebol brasileiro um dos mais vibrantes do mundo.
+          </p>
+          <p class="hero__text">
+            A Libertadores da América é o sonho de todo clube sul-americano, e os
+            times brasileiros têm protagonizado grandes campanhas nessa competição.
+            O futebol segue evoluindo com novas tecnologias como o VAR, melhorando
+            a arbitragem e garantindo mais justiça nas decisões dentro de campo.
+          </p>
+          <a href="#conteudo-futebol" class="hero__btn">mais...</a>
+        </div>
       </section>
+
+      <div class="conteudo__sec" id="conteudo-futebol">
+
+        <section class="conteudo__fut">
+          <h2 class="conteudo__fut-h2">História</h2>
+          <p class="conteudo__fut-txt">
+            O futebol moderno nasceu na Inglaterra em 1863, quando foi fundada a
+            Football Association. As regras foram padronizadas e o esporte começou
+            a se espalhar pelo mundo. No Brasil, Charles Miller é apontado como o
+            introdutor do futebol, trazendo bolas e regras da Inglaterra em 1894,
+            revolucionando o esporte no país.
+          </p>
+          <a class="conteudo__fut-btn" href="#">mais...</a>
+        </section>
+  
+        <section class="conteudo__bas">
+          <h2 class="conteudo__bas-h2">Técnicas</h2>
+          <p class="conteudo__bas-txt">
+            O futebol exige domínio de bola, passe, drible, chute e posicionamento.
+            A tática evoluiu muito ao longo dos anos, com formações como 4-4-2,
+            4-3-3 e 3-5-2 sendo adaptadas conforme as necessidades das equipes
+            e os estilos dos treinadores ao longo das décadas.
+          </p>
+          <a class="conteudo__bas-btn" href="#">mais...</a>
+        </section>
+  
+        <section class="conteudo__vol">
+          <h2 class="conteudo__vol-h2">Competições</h2>
+          <p class="conteudo__vol-txt">
+            As principais competições incluem a Copa do Mundo FIFA, UEFA Champions
+            League, Premier League, La Liga e Bundesliga. No Brasil, o Campeonato
+            Brasileiro, a Copa do Brasil e a Libertadores são as mais acompanhadas
+            pelos torcedores apaixonados de todo o país.
+          </p>
+          <a class="conteudo__vol-btn" href="#">mais...</a>
+        </section>
+
+      </div>
+
     </main>
+
     <footer>
       <p>&copy; 2026 ESPORTE TOTAL. Todos os direitos reservados.</p>
     </footer>
