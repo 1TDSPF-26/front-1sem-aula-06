@@ -12,10 +12,10 @@
 } */
 
 :root{
-    --cor-primaria: #00ff00;
-    --cor-secundaria: #ff0000;
-    --cor-fundo: #55555c;
-    --bg-gradiente: linear-gradient(45deg, #303630, #2d3568, #27273a);
+    --cor-primaria: rgba(0, 60, 255);
+    --cor-secundaria: rgba(132, 0, 255);
+    --cor-fundo: rgba(204, 0, 255);
+    --bg-gradiente: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria), var(--cor-fundo));
     --titulo-main: 4rem;
     --text-main: #fff;
 }   

@@ -27,7 +27,7 @@
 /*PSEUDO CLASSE*/
 
 .cabecalho__a:hover{
-    background-color:#1763a5;
+    background-color: rgba(98, 0, 255, 0.9);
     color: #fff;
 }
 
