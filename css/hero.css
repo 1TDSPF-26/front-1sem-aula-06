@@ -53,6 +53,9 @@
     color: #fff;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (min-width: 320px) and (max-width: 425px){
 
     .hero__title{
@@ -125,3 +128,5 @@
         height: 5%;
     }
 }
+/*Java Script*/
+
