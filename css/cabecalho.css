@@ -47,3 +47,33 @@
 
 
 }
+@media (min-width: 426px) and (max-width: 768px){
+
+    .cabecalho__a{
+        padding: 1%;
+        width: 1%;
+        font-size: 2rem;
+
+    }
+    
+    .cabecalho__ul{
+      justify-content: space-around;
+    }
+
+
+}
+@media (min-width: 769px) and (max-width: 4000px){
+
+    .cabecalho__a{
+        padding: 1%;
+        width: 1%;
+        font-size: 2rem;
+
+    }
+    
+    .cabecalho__ul{
+      justify-content: space-around;
+    }
+
+
+}
