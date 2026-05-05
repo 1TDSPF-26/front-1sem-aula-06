@@ -20,6 +20,10 @@
     justify-content: space-around;
 }
 
+.hero__container--login{
+    background-image: linear-gradient(90deg, rgba(37, 34, 80, 0.7), rgba(103, 0, 199, 0.7), rgba(96, 0, 121, 0.7)), url("../img/img-02-fundo-hero-login.jpg");
+}
+
 .hero__title{
     font-size: var(--titulo-main);
     text-align: center;
@@ -34,10 +38,15 @@
 .hero__btn{
     width: 10%;
     height: 8%;
-    display: inline-block;
     margin: 0 auto;
     border: 2px solid var(--text-main);
-    text-align: center;
+    color: var(--text-main);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgb(174, 0, 255), rgb(103, 0, 199));
+
 }
 
 /*PSEUDO CLASSE*/
