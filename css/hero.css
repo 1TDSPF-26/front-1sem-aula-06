@@ -4,6 +4,13 @@
     height: 100vh;
     color: var(--text-main);
 }
+.hero__container{
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7)), url("../img/img-01-fundo-hero.jpg");
+}
+.hero__container--login{
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7)), url("../img/img-02-fundo-login.jpg");
+}
+
 
 .hero__container{
     /* OVERLAY */
