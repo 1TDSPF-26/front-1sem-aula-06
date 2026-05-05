@@ -20,6 +20,9 @@
     justify-content: space-around;
 }
 
+.hero__container--login{
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(209, 226, 210, 0.7), rgba(11, 49, 216, 0.7)), url("../img/imagem-01-fundo-login.jpg");
+}
 .hero__title{
     font-size: 100%;
     text-align: center;
