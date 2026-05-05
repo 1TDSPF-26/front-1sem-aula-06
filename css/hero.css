@@ -34,10 +34,15 @@
 .hero__btn{
     width: 10%;
     height: 8%;
-    display: inline-block;
     margin: 0 auto;
-    border: 2px solid var(--text-main);
-    text-align: center;
+    border: 2px solid #c0b5b5;
+    color: var(--text-main);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(55, 48, 55), rgba(11, 216, 18), rgba(11, 49, 216));
+    border-radius: 5px;
 }
 
 /*PSEUDO CLASSE*/
