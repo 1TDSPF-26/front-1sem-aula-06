@@ -34,10 +34,17 @@
 .hero__btn{
     width: 10%;
     height: 8%;
-    display: inline-block;
     margin: 0 auto;
-    border: 2px solid var(--text-main);
-    text-align: center;
+    border: 2px solid #b0a7a7;
+    color: var(--text-main);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px #f9f9fa;
+    background: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7));
+    border-radius: 5px;
+    
 }
 
 /*PSEUDO CLASSE*/
@@ -58,15 +65,15 @@
     }
 
     .hero__btn{
-        display:flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
 
+
         font-size: 2rem;
         width: 40%;
         height: 10%;
     }
-
 }
