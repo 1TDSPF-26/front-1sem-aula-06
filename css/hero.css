@@ -5,9 +5,17 @@
     color: var(--text-main);
 }
 
+.hero__container--login{
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7)), url("../img/img_fundo_login.jpg");
+}
+
+.hero__container{
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7)), url("../img/img-01-fundo-hero.jpg");
+}
+
 .hero__container{
     /* OVERLAY */
-    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(11, 216, 18, 0.7), rgba(11, 49, 216, 0.7)), url("../img/img-01-fundo-hero.jpg");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,10 +42,15 @@
 .hero__btn{
     width: 10%;
     height: 8%;
-    display: inline-block;
     margin: 0 auto;
-    border: 2px solid var(--text-main);
-    text-align: center;
+    border: 2px solid #b0a7a7;
+    color: var(--text-main);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(55, 48, 55), rgba(11, 216, 18), rgba(11, 49, 216));
+    border-radius: 5px;
 }
 
 /*PSEUDO CLASSE*/
@@ -63,8 +76,10 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+
+
         font-size: 2rem;
         width: 40%;
-        height: 6%;
+        height: 10%;
     }
 }
