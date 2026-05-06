@@ -7,7 +7,7 @@
     <title>PÁGINA DE LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
 
-    <script src="./js/login.js" defer></script>
+    <script src="./js/cadastro.js" defer></script>
 
 </head>
 
@@ -25,33 +25,36 @@
     <main class="conteudo">
         <section class="hero">
             <div class="hero__container hero__container--login">
-                <h1 class="hero__title">CONTROLE DE ACESSO</h1>
+                <h1 class="hero__title">CADASTRO DE USUÁRIO</h1>
                 <form action="/index.php" method="GET">
-                    <fieldset>
-                        <div>
-                            <legend>Dados do Usuário</legend>
-                            <label for="idEmail">Email</label>
+                    <legend class="cadastro__legend">Dados do Usuário</legend>
+
+                    <fieldset class="cadastro__field">
+                        <div class="cadastro__div">
+                            <label class="cadastro__label" for="idEmail">Email:</label>
                             <input type="email" name="email" id="idEmail" placeholder="Digite seu email:" required
                                 minlength="15" maxlength="150">
                         </div>
-                        <div>
-                            <label for="idSenha">Senha</label>
+                        <div class="cadastro__div">
+                            <label class="cadastro__label" for="idSenha">Senha:</label>
                             <input type="password" name="senha" id="idSenha" placeholder="Digite sua senha:" required
                                 minlength="5" maxlength="20">
 
-                            <button type="submit" id="btnEntrar">Login</button>
+                            <button type="submit" class="btnCadastrar" id="btnCadastrar"><a href="./login.html">Cadastrar</a></button>
                         </div>
-                        <div>
-                            <p>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
-                        </div>
+                    </fieldset>
+
+                    <div class="cadastro__div">
+                        <p>Já tem uma conta? <button class="btnFacaLogin"><a  href="./login.html">Faça login</a></button></p>
+                    </div>
                     </fieldset>
 
                 </form>
             </div>
         </section>
     </main>
-    
-   
+
+
 
     <footer>
         <p>&copy; 2026 ESPORTE TOTAL. Todos os direitos reservados.</p>

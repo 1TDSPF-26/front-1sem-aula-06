@@ -21,11 +21,12 @@
 }
 
 .hero__container--login{
-    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(209, 226, 210, 0.7), rgba(11, 49, 216, 0.7)), url("../img/imagem-01-fundo-login.jpg");
+    background-image: linear-gradient(90deg, rgba(55, 48, 55, 0.7), rgba(110, 114, 111, 0.7), rgba(11, 49, 216, 0.7)), url("../img/imagem-01-fundo-login.jpg");
 }
 .hero__title{
     font-size: 100%;
     text-align: center;
+    font-weight: bold;
 }
 
 .hero__text{
@@ -51,6 +52,59 @@
 .hero__btn:hover{
     background-color:#1763a5;
     color: #fff;
+}
+
+/*Cadastro*/
+.cadastro__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cadastro__field{
+    display: grid;
+    width: 50%;
+    margin-left: 25%;
+    
+    
+}
+.cadastro__label{
+    padding: 1rem;
+
+}
+.cadastro__legend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.btnCadastrar{ 
+    background-color: #f7f7f7;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 1px;
+     margin-left: 1.2%;
+
+}
+.btnCadastrar:hover{
+    background-color: #a3cdf1;
+}
+.btnFacaLogin{
+    background-color: #f7f7f7;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+.btnFacaLogin:hover{
+    background-color: #a3cdf1;
 }
 
 
