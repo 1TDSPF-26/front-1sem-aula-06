@@ -1,0 +1,1 @@
+//forma correta de utilizar java script
