@@ -22,9 +22,38 @@
       <section class="hero">
         <div class="hero__container hero__container--login">
           <h1 class="hero__title">CONTROLE DE ACESSO</h1>
-          <form action="">
-            
-          </form>      
+          <form action="/index.php" method="GET">
+            <fieldset>
+              <legend>LOGIN</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="idEmail"
+                  placeholder="Digite seu email"
+                  required
+                  minlength="15"
+                  maxlength="150"
+                />
+              </div>
+              <div>
+                <label for="idSenha">Senha</label>
+                <input
+                  type="password"
+                  name="senha"
+                  id="idSenha"
+                  placeholder="Digite sua senha"
+                  required
+                  minlength="5"
+                  maxlength="15"
+                />
+                <div>
+                  <button type="submit" id="btnEntrar">Entrar</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>
@@ -32,5 +61,16 @@
     <footer>
       <p>&copy; 2026 ESPORTE TOTAL. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+
+      // alert("Olá Mundo!");
+
+      var nome = prompt("Qual é o seu nome?"); // retorna
+      alert(nome);
+      console.log(nome);
+
+    </script>
+
   </body>
 </html>
