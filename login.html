@@ -22,7 +22,8 @@
       <section class="hero">
         <div class="hero__container hero__container--login">
           <h1 class="hero__title">CONTROLE DE ACESSO</h1>
-            <form action="/index.php" method="GET">
+
+          <form action="/index.php" method="GET">
             <fieldset>
               <legend>LOGIN</legend>
               <div>
@@ -49,29 +50,53 @@
                   maxlength="15"
                 />
                 <div>
-                  <button type="submit" id="btnLogin">Entrar</button>
+                  <button type="submit" id="btnEntrar">Entrar</button>
                 </div>
               </div>
             </fieldset>
+          </form>
         </div>
       </section>
     </main>
-    
+
     <footer>
       <p>&copy; 2026 ESPORTE TOTAL. Todos os direitos reservados.</p>
     </footer>
 
     <script>
 
-      // alert("Olá Mundo!");
+      //Comentário de linha
+      /*
+        Comentário de bloco
+      */
 
-      var nome = prompt("Qual é o seu nome?"); // retorna
-      alert(nome);
-      console.log(nome);
+      //Declaração de variáveis: 3 tipos
+      //var let const
 
+      //var - EVITE
+var nome = "Matheus";
+console.log(nome);
+
+let sobreNome = "Rodrigues";
+console.log(sobreNome);
+
+//Reatribuição de valor no var
+nome = 1;
+console.log(nome);
+//Reatribuição de valor no let
+sobreNome = 2;
+console.log(sobreNome);
+
+
+//Redeclarando com var
+var nome = "Joaquim";
+console.log(nome);
+
+//Redeclarando com let
+let sobreNome = "Jonas";
+console.log(sobreNome);
     </script>
 
   </body>
 </html>
-
 
