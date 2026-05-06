@@ -16,6 +16,13 @@
 const botaoEntrar = document.getElementById('btnEntrar');
 
 //Atrelando evendo de ação ao botão de entrar
-//addEventListener é o método que utilizamos para adicionar um evento de ação a um elemento do html
+//addEventListener adicionando (add) event(eventos) listener(escutador)é o método que utiliza para adicionar um evento de ação a um elemento do html
 //o método addEventListener recebe como parâmetro o tipo de evento que queremos adicionar e a função que será executada quando o evento ocorrer
 //click é o tipo de evento que queremos adicionar, ou seja, quando o usuário clicar no botão de entrar
+
+//recebe 2 parametros, o primeiro é o tipo de evento, no caso "click", e o segundo é a função que será executada quando o evento ocorrer
+botaoEntrar.addEventListener('click', function(){
+    //função click é a função que será executada quando o usuário clicar no botão de entrar
+    // Código vai ser executado quando o botão for clicado
+    console.log("Botão ativo!");
+});

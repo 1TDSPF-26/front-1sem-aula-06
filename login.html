@@ -7,7 +7,10 @@
     <title>PÁGINA DE LOGIN</title>
     <link rel="stylesheet" href="./css/main.css" />
 
-    <script src="./js/script.js"></script>
+    <!-- link para o arquivo de script.js -->
+    <!-- O atributo defer garante que o script seja carregado após o HTML ser processado
+     se isso não for feito o JS não ira funcionar -->
+    <script src="./js/script.js" defer></script>
 
 </head>
 
@@ -41,6 +44,7 @@
                                 minlength="5" maxlength="15" />
                             <div>
                                 <button type="submit" id="btnEntrar">Entrar</button>
+                                
                             </div>
                         </div>
                     </fieldset>
@@ -50,6 +54,7 @@
     </main>
 
     <footer>
+
         <p>&copy; 2026 ESPORTE TOTAL. Todos os direitos reservados.</p>
     </footer>
 
