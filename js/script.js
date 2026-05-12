@@ -1,4 +1,14 @@
 
+//Ususario local
+const usuario = {
+    email: "email@email.com",
+    senha: "12345",
+    nome: "Alexandre",
+    avatar: "https://placehold.co/100x100/cccccc/969696.png?text=Mobile&font=inter"
+}
+
+
+
 /*chamando o botão do html*/
 const botaoEntrar = document.getElementById("btnEntrar");
 
@@ -8,8 +18,10 @@ const botaoEntrar = document.getElementById("btnEntrar");
 
 /*a função addEventListener(param1, param2) recebe 2 parâmetros,
 o primeiro é o evento a ser realizado, e o  segundo é a função anônima ou de callback.*/
-botaoEntrar.addEventListener("click", function(){
+botaoEntrar.addEventListener("click", function(evento){
     
+    evento.preventDefault();
+
     //Recupere aqui o campo email:
     const email = document.getElementById("idEmail");
     
@@ -21,9 +33,34 @@ botaoEntrar.addEventListener("click", function(){
     console.log(senha.value);
 
     //Declarar um objeto e inserir os dados dos campos:
-    const usuario = {
-        email: email.value,
-        senha: senha.value
+    // const usuario = {
+    //     email: email.value,
+    //     senha: senha.value
+    // }
+
+
+    // setTimeout (function(){
+    //     alert("Dado enviado!");
+    //     document.getElementsByTagName("form")[0].submit();
+    // },5000);
+
+
+    //utilizando o try{} catch{}
+    try{
+        if(usuario !== null){
+            if( (usuario.email === email.value) && (usuario.senha === senha.value) ){
+                alert("Login realizado com sucesso");
+            }
+            else{
+                throw new Error("Email ou senha incorretos!")
+            }
+        }
+
+
+    } catch (error) {
+        console.error(error);
+        alert(error);
+
     }
 
 
