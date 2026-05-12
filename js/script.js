@@ -24,16 +24,16 @@ botaoEntrar.addEventListener("click", function(){
     }
 
 
-    //Fazer uma validação de email e senha, se estiverem preenchidos, então mostrar o alerta "Bem vindo ao sistema.
-    if (email.value && senha.value) {
-        const modal = document.getElementById("modal-login");
-        const closeModal = document.getElementsByClassName("modal__close")[0];
-        modal.showModal();
-        closeModal.addEventListener("click", function(){
-            modal.close();
-        })
+    // //Fazer uma validação de email e senha, se estiverem preenchidos, então mostrar o alerta "Bem vindo ao sistema.
+    // if (email.value && senha.value) {
+    //     const modal = document.getElementById("modal-login");
+    //     const closeModal = document.getElementsByClassName("modal__close")[0];
+    //     modal.showModal();
+    //     closeModal.addEventListener("click", function(){
+    //         modal.close();
+    //     })
     
-    }
+    // }
 
 
 });
