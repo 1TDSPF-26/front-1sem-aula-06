@@ -32,14 +32,14 @@
 
   .conteudo__sec{
         grid-template-columns: 1fr;
-
-        gap:0;
+        grid-template-rows: 3fr;
+        gap:1rem;
     }
 
 .conteudo__fut, .conteudo__bas, .conteudo__vol{
-
-    font-size: 1rem;
-    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 3%;
+    text-align: justify;
 }
 
 }

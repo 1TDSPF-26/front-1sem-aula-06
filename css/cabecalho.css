@@ -36,12 +36,15 @@
 
     .cabecalho__a{
         padding: 2%;
-        width: 2%;
+        width: auto;
+        font-size: 1.4rem;
 
     }
     
     .cabecalho__ul{
       justify-content: space-around;
+      flex-wrap: wrap;
+      gap:1rem;
     }
 
 

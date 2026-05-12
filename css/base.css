@@ -28,9 +28,9 @@ html{
 body{
     font-size: 2.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%;
+    min-height: 100vh;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -48,4 +48,5 @@ ul{
 
 main{
     width: 100%;
+    
 }
