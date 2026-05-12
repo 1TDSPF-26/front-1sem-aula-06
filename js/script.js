@@ -1,3 +1,12 @@
+//Usuário local
+const usuario = {
+    email   : "email@email.com",
+    senha   : "12345",
+    nome    : "José das Couve",
+    avatar  : ""
+}
+
+
 
 const botaoEntrar = document.getElementById("btnEntrar");
 
@@ -5,7 +14,9 @@ const botaoEntrar = document.getElementById("btnEntrar");
 //Utilizamos a função addEventListener como perceptora(escutador de eventos) ao botão, o evento vai ser o click.
 //Este evento quando usado no HTML utilizamos o prefixo ON, mas aqui no JS, não utilizamos, então ao invés de usar onclick, usamos apenas click.
 //A função addEventListener(param1,param2), recebe dois parâmetros, o primeiro é o evento que se espera, o segundo é uma função anônima ou de callBack.
-botaoEntrar.addEventListener("click", function(){
+botaoEntrar.addEventListener("click", function(evento){
+
+    evento.preventDefault();
     
     //Recupere aqui o campo email:
     const email = document.getElementById("idEmail");
@@ -18,9 +29,32 @@ botaoEntrar.addEventListener("click", function(){
     console.log(senha.value);
 
     //Declarar um objeto e inserir os dados dos campos:
-    const usuario = {
-        email: email.value,
-        senha: senha.value
+    //const usuario = {
+      //  email: email.value,
+       // senha: senha.value
+   // }
+
+    //setTimeout(function(){
+      //  alert("Dado enviado!")
+      //  document.getElementsByTagName("form")[0].submit();
+  //  },5000);
+
+    
+    try {
+
+
+    if(!usuario !== null){
+        console.log(usuario);        
+        if((usuario.email === email.value) && (usuario.senha === senha.value)){
+            alert("login realizado com sucesso!")
+        }else{
+            throw new error("email ou senho incorretos!")
+        }
+    }
+
+    } catch (error){
+        console.error(error);
+        alert(error);
     }
 
 
