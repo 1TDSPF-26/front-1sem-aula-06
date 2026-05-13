@@ -57,7 +57,16 @@ try {
     if(usuario !== null){
         console.log
         if((usuario.email === email.value)  && (usuario.senha === senha.value)){
-            alert("Login realizado com sucesso!");    
+            //Recuperando a janela de dialog
+            const modalDialog = document.getElementById("meu-modal");
+            //Abrindo a janela modal
+            modalDialog.showModal();
+            //Atrelando a função de fechamento do modal ao botão existente nele mesmo!
+            const botaoFecharModal = document.getElementById("fechar-modal");
+                botaoFecharModal.addEventListener("click", function(){
+                    modalDialog.close();
+                });
+                
         }else{
             throw new Error("Email ou senha incorretos!")
         }
