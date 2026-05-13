@@ -32,24 +32,23 @@ botaoEntrar.addEventListener("click", function(evento){
     console.log(email.value);
     console.log(senha.value);
 
-    //Declarar um objeto e inserir os dados dos campos:
-    // const usuario = {
-    //     email: email.value,
-    //     senha: senha.value
-    // }
-
-
-    // setTimeout (function(){
-    //     alert("Dado enviado!");
-    //     document.getElementsByTagName("form")[0].submit();
-    // },5000);
 
 
     //utilizando o try{} catch{}
     try{
         if(usuario !== null){
             if( (usuario.email === email.value) && (usuario.senha === senha.value) ){
-                alert("Login realizado com sucesso");
+                //recuperando a janela de dialog
+                const modalDialog = document.getElementById("meu-modal");
+                //abrindo a janela modal (pop-up)
+                modalDialog.showModal();
+
+                //atribuindo botão para fechar modal
+                const botaoFecharModal = document.getElementById("fechar-modal");
+                botaoFecharModal.addEventListener("click", function(){
+                    modalDialog.close();
+                });
+
             }
             else{
                 throw new Error("Email ou senha incorretos!")
