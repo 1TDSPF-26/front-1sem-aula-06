@@ -47,9 +47,27 @@ botaoEntrar.addEventListener("click", function(evento){
                 botaoFecharModal.addEventListener("click", function(){
                     modalDialog.close();
                 });
+
+                //Gerando um contador de tempo para o redirect com setInterval()!
+               let contador = 5;
+                
+                const divMsg = document.getElementById("msg");
+                divMsg.innerHTML = `<p class='login-sucesso'>Login realizado com sucesso!</p><p class='login-sucesso'>Você será redirecionado em ${contador} segundos!</p>`;
+
+                const intervalo = setInterval( ()=>{
+                    contador--;
+                    divMsg.innerHTML = `<p class='login-sucesso'>Login realizado com sucesso!</p><p class='login-sucesso'>Você será redirecionado em ${contador} segundos!</p>`;
+
+                    if(contador === 0){
+                        clearInterval(intervalo);
+                        window.location.href = "../index.html";
+                    }
+                }, 1000);
                 
             }else{
                 throw new Error("Email ou Senha incorretos!")
+                //Para casa 
+                //Criar modal de erro do login! 
             }
         }
         
