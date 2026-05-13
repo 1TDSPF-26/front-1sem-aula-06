@@ -28,31 +28,32 @@ botaoEntrar.addEventListener("click", function(evento){
     console.log(email.value);
     console.log(senha.value);
 
-    //Declarar um objeto e inserir os dados dos campos:
-    //const usuario = {
-      //  email: email.value,
-       // senha: senha.value
-   // }
-
-    //setTimeout(function(){
-      //  alert("Dado enviado!")
-      //  document.getElementsByTagName("form")[0].submit();
-  //  },5000);
+    
 
     
     try {
+        
+        if(usuario !== null){
+            console.log(usuario);
+            if( (usuario.email === email.value) && (usuario.senha === senha.value) ){
+                //Recuperando a janela de dialog
+                const modalDialog = document.getElementById("meu-modal");
+                // abrindo a janela modal
+                //modalDialog.show();
+                modalDialog.showModal();
 
-
-    if(!usuario !== null){
-        console.log(usuario);        
-        if((usuario.email === email.value) && (usuario.senha === senha.value)){
-            alert("login realizado com sucesso!")
-        }else{
-            throw new error("email ou senho incorretos!")
+                // atrelando a função de fechamneto do modal ao botão existente nele mesmo 
+                const botaoFecharModal = document.getElementById("fechar-modal");
+                botaoFecharModal.addEventListener("click", function(){
+                    modalDialog.close();
+                });
+                
+            }else{
+                throw new Error("Email ou Senha incorretos!")
+            }
         }
-    }
-
-    } catch (error){
+        
+    } catch (error) {
         console.error(error);
         alert(error);
     }
