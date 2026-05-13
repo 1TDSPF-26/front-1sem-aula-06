@@ -42,9 +42,16 @@ botaoEntrar.addEventListener("click", function(evento){
 
     try {
         
-        if(!usuario === null){
+        if(usuario !== null){
+            console.log(usuario);
             if( (usuario.email === email.value) && (usuario.senha === senha.value) ){
-                alert("Login realizado com sucesso!");
+                const modalDialog = document.getElementById("meu-modal");
+                modalDialog.showModal();
+
+                const botaoFecharModal = document.getElementById("fechar-modal");
+                botaoFecharModal.addEventListener("click", function(){
+                    modalDialog.close();
+                })
             }else{
                 throw new Error("Email ou Senha incorretos!")
             }
