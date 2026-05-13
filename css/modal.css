@@ -1,0 +1,40 @@
+#meu_modal{
+    /* position: relative; */
+    background-color: #34f865;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align:center;
+
+    margin:10% auto;
+    
+    border-radius: .375rem;
+    width:100%;
+    height: 50vh;
+}
+
+#meu_modal::backdrop{
+    background-color: rgba(0,0,0,0.8);
+}
+
+#fechar_modal{
+    background-color: #34f865;
+    color: #000000;
+    border: 1.5px solid #019409;
+    float: right;
+    top:0;
+    right: 0;
+    cursor:pointer;
+    display:block;
+    font-size: 2.5rem;
+    width: 4%;
+    border-radius: 50%;
+
+}
+
+#fechar_modal::before{
+    content:"X";
+}
+.login_sucesso{
+    margin-top: 5%;
+}
