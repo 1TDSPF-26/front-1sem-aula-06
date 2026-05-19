@@ -98,27 +98,33 @@ botaoEntrar.addEventListener("click", function (evento) {
   console.log(email.value);
   console.log(senha.value);
 
+  //Recuperando a janela de dialog
+  const modalDialog = document.getElementById("meu-modal");
+
+  //Atrelando a função de fechamento do modal ao botão existente nele mesmo!
+  const botaoFecharModal = document.getElementById("fechar-modal");
+  botaoFecharModal.addEventListener("click", function () {
+    modalDialog.close();
+  });
+
+  const divMsg = document.getElementById("msg");
+  
   try {
     if (usuarios !== null) {
       for (let x = 0; x < usuarios.length; x++) {
-        
-        if (usuarios[x].email === email.value && usuarios[x].senha === senha.value) {
-          //Recuperando a janela de dialog
-          const modalDialog = document.getElementById("meu-modal");
+        if (
+          usuarios[x].email === email.value &&
+          usuarios[x].senha === senha.value
+        ) {
           //Abrindo a janela modal
           // modalDialog.show();
           modalDialog.showModal();
-
-          //Atrelando a função de fechamento do modal ao botão existente nele mesmo!
-          const botaoFecharModal = document.getElementById("fechar-modal");
-          botaoFecharModal.addEventListener("click", function () {
-            modalDialog.close();
-          });
-
+          
+          
           //Gerando um contador de tempo para o redirect com setInterval()!
           let contador = 5;
-
-          const divMsg = document.getElementById("msg");
+          modalDialog.classList.remove();
+                  
           divMsg.innerHTML = `<p class='login-sucesso'>Login realizado com sucesso!</p><p class='login-sucesso'>Você será redirecionado em ${contador} segundos!</p>`;
 
           const intervalo = setInterval(() => {
@@ -133,17 +139,25 @@ botaoEntrar.addEventListener("click", function (evento) {
 
           //Utilizando o return para bloquear o seguimento do fluxo da aplicação. Fazendo com que ela retorne para quem a chamou, no caso foi o document, e o fluxo retorna para o escopo central, não chegando até o throw.
           return;
-
-        } 
+        }
       }
       throw new Error("Email ou Senha incorretos!");
-      //Para casa
-      //Reutilizar o modal para apresentar a mensagem de erro do login!
-      //Melhorar a resposta para o usuário no modal.
     }
   } catch (error) {
     console.error(error);
-    alert(error);
-  }
+          //Abrindo a janela modal
+          // modalDialog.show();
+          modalDialog.showModal();
+          modalDialog.classList.add("danger");
 
+
+          divMsg.innerHTML = `<p>${error}</p>`;
+  }
 });
+
+//Reutilize o modal para apresentar a mensaagem de erro:
+//Regras:
+//1 - O modal e seus filhos não não podem ser redeclarados.
+//2 - A mensagem deve ser estilizada.
+//Dicas: Utiliza métodos como, setAttribute ou classList para adicionar novos atributos aos elementos.
+//Trabalhe o css juntamente com o JS, não se esqueça que você pode modificar o HTML, apenas adicionando alguma informação na assinatura das tags.

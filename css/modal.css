@@ -34,9 +34,19 @@
 }
 
 #fechar-modal::before{
-    content:"A";
+    content:"X";
 }
 
 .login-sucesso{
     margin-top: 5%;
+}
+
+.danger {
+    background-color:rgb(223, 148, 200) !important;
+    color:rgb(180, 4, 33) !important;
+}
+
+.danger #fechar-modal{
+   background-color: #e49292 !important;
+    color: #b50303 !important;
 }
