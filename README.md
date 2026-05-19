@@ -27,3 +27,5 @@ O esporte é uma parte fundamental da cultura humana, remontando a milhares de a
 - Apostila de CSS - Até a página 45
 - [W3Schools - CSS](https://www.w3schools.com/css/)
 - [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
