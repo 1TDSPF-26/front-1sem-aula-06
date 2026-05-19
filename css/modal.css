@@ -38,3 +38,14 @@
 .login_sucesso{
     margin-top: 5%;
 }
+
+// fazendo estilização do modal de erro
+.danger {
+    background-color: #e49292 !important;
+    color: #b50303 !important;
+}
+
+.danger #fechar_modal{
+    background-color: #e49292 !important;
+    color: #b50303 !important;
+}

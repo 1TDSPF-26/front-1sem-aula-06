@@ -100,7 +100,18 @@ botaoEntrar.addEventListener("click", function(evento){
     console.log(email.value);
     console.log(senha.value);
 
+    //recuperando a janela de dialog
+    const modalDialog = document.getElementById("meu_modal");
 
+    
+    //atribuindo botão para fechar modal
+    const botaoFecharModal = document.getElementById("fechar_modal");
+    botaoFecharModal.addEventListener("click", function(){
+        modalDialog.classList.remove();
+        modalDialog.close();
+    });
+    
+    const divMsg = document.getElementById("msg");
 
     //utilizando o try{} catch{}
     try{
@@ -111,20 +122,11 @@ botaoEntrar.addEventListener("click", function(evento){
 
                 if( (usuarios[x].email === email.value) && (usuarios[x].senha === senha.value) ){
     
-                    //recuperando a janela de dialog
-                    const modalDialog = document.getElementById("meu_modal");
                     //abrindo a janela modal (pop-up)
                     modalDialog.showModal();
     
-                    //atribuindo botão para fechar modal
-                    const botaoFecharModal = document.getElementById("fechar_modal");
-                    botaoFecharModal.addEventListener("click", function(){
-                        modalDialog.close();
-                    });
-    
                     //gerando um contador de tempo para o redirect com setInrerval()!
                     let contador = 5;
-                    const divMsg = document.getElementById("msg");
     
                     divMsg.innerHTML = `<p class='login_sucesso'>Login realizado com sucesso!</p><p class='login_sucesso'>Você será redirecionado em ${contador} segundos </p>`;
     
@@ -149,9 +151,22 @@ botaoEntrar.addEventListener("click", function(evento){
         }
     } catch (error) {
         console.error(error);
-        alert(error);
+        //abrindo a janela modal
+        modalDialog.showModal();
+        modalDialog.classList.add("danger");
+
+        divMsg.innerHTML = `<p>${error}</p>`;
 
     }
 
 } );
+
+
+//Reutilize o modal para apresentar a mensaagem de erro:
+//Regras:
+//1 - O modal e seus filhos não não podem ser redeclarados.
+//2 - A mensagem deve ser estilizada.
+//Dicas: Utiliza métodos como, setAttribute ou classList para adicionar novos atributos aos elementos.
+//Trabalhe o css juntamente com o JS, não se esqueça que você pode modificar o HTML, apenas adicionando alguma informação na assinatura das tags.
+
 
