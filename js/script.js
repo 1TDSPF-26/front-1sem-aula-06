@@ -101,8 +101,10 @@ botaoEntrar.addEventListener("click", function (evento) {
   try {
     if (usuarios !== null) {
       for (let x = 0; x < usuarios.length; x++) {
-        
-        if (usuarios[x].email === email.value && usuarios[x].senha === senha.value) {
+        if (
+          usuarios[x].email === email.value &&
+          usuarios[x].senha === senha.value
+        ) {
           //Recuperando a janela de dialog
           const modalDialog = document.getElementById("meu-modal");
           //Abrindo a janela modal
@@ -130,18 +132,15 @@ botaoEntrar.addEventListener("click", function (evento) {
               window.location.href = "../index.html";
             }
           }, 1000);
-        } else {
-          throw new Error("Email ou Senha incorretos!");
-          //Para casa
-          //Reutilizar o modal para apresentar a mensagem de erro do login!
-          //Melhorar a resposta para o usuário no modal.
 
+          //Utilizando o return para bloquear o seguimento do fluxo da aplicação. Fazendo com que ela retorne para quem a chamou, no caso foi o document, e o fluxo retorna para o escopo central, não chegando até o throw.
+          return;
         }
       }
+      throw new Error("Email ou Senha incorretos!");
     }
   } catch (error) {
     console.error(error);
     alert(error);
   }
-
 });
