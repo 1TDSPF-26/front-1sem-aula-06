@@ -19,7 +19,7 @@
 #fechar-modal{
     background-color: rgb(212, 121, 255);
     color: rgb(132, 0, 255);
-    border: 1.5px solid #123811;
+    border: 1.5px solid #251138;
     float: right;
     top:0;
     right: 0;
@@ -36,5 +36,15 @@
 }
 
 .login-sucesso{
-    margin-top: 6%;
+    margin-top: 5%;
+}
+
+.danger {
+    background-color: #e49292 !important;
+    color: #b50303 !important;
+}
+
+.danger #fechar-modal{
+    background-color: #e49292 !important;
+    color: #b50303 !important;
 }
