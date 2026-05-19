@@ -1,5 +1,5 @@
 #meu-modal{
-    background-color: #92e494;
+    background-color: rgb(146, 228, 148);
     color: #06b503;
     font-size: 3rem;
     font-weight: bold;
@@ -37,4 +37,14 @@
 
 .login-sucesso{
     margin-top: 5%;
+}
+
+.danger{
+    background-color: #e49292!important;
+    color: #b50303!important;
+}
+
+.danger #fechar-modal{
+    background-color: #e49292!important;
+    color: #b50303!important;
 }
