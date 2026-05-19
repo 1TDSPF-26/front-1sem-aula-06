@@ -38,3 +38,13 @@
 .login-sucesso{
     margin-top: 5%;
 }
+
+.danger {
+    background-color: #e49292 !important;
+    color: #b50303 !important;
+}
+
+.danger #fechar-modal{
+    background-color: #e49292 !important;
+    color: #b50303 !important;
+}
