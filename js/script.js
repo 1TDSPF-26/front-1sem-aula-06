@@ -137,13 +137,14 @@ botaoEntrar.addEventListener("click", function(evento){
                             window.location.href = "../index.html";
                         }
                     }, 1000);
+
+                    //Utilizando o return para bloquear o seguimento do fluxo da aplicação. Fazendo com que ela retorne para quem a chamou, no caso foi o document, e o fluxo retorna para o escopo central, não chegando até o throw.
+                    return;
                     
                 }
-                else{
-                    throw new Error("Email ou senha incorretos!")
-                }
-
             }
+            
+            throw new Error("Email ou senha incorretos!")
 
         }
     } catch (error) {
@@ -151,7 +152,6 @@ botaoEntrar.addEventListener("click", function(evento){
         alert(error);
 
     }
-
 
 } );
 
